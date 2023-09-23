@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alpha Mix Research</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+    </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/css/main.min.css">
+
+</head>
+
+<body>
+    <div class="container" id="wrapper">
+        <header>
+            <div id="header"></div>
+        </header>
+
+        <main>
+            <div class="content" id="content">
+                <h2 class="display-5">Conclusions</h2>
+                <div class="row">
+                    <ul>
+                        <li>
+                            <p>In the case of MNIST, Alpha-Mix outperformed random sampling.</p>
+                        </li>
+                        <li>
+                            <p>In all other tests conducted on CIFAR10 and CIFAR100, there is no significant improvement
+                                observed between Alpha-Mix and random sampling. Even when Alpha-Mix does show an
+                                advantage,
+                                it's typically by a margin of at most 3% in terms of accuracy.</p>
+                        </li>
+                        <li>
+                            <p>When employing a higher number of epochs in a low-data regime, there is no discernible
+                                improvement between Alpha-Mix and random sampling. In other words, as the number of
+                                epochs
+                                increases, both sample methods exhibit relatively similar performance improvements.</p>
+                        </li>
+                        <li>
+                            <p>The Vision Transformers model consistently yields poor performance on the CIFAR100
+                                dataset,
+                                irrespective of whether Alpha-Mix or random sampling is employed.</p>
+                        </li>
+                        <li>
+                            <p>Alpha-Mix appears to have potential, as indicated by graphs in the referenced article.
+                                However, I encountered challenges in replicating these results, possibly due to
+                                limitations
+                                in computational resources.
+                        </li>
+                        </p>
+                    </ul>
+                </div>
+
+                <h2 class="display-5">Suggestions for further research</h2>
+                <div class="row">
+                    <ul>
+                        <li>
+                            <p>Evaluate Alpha-Mix with increased computational resources to assess its potential for
+                                improved performance.</p>
+                        </li>
+                        <li>
+                            <p>Extend the application of Alpha-Mix to diverse datasets, including non-image data like
+                                video, to gain a deeper understanding of its capabilities.</p>
+                        </li>
+                        <li>
+                            <p>Investigate the performance of Alpha-Mix on datasets containing partial mislabeling to
+                                determine whether it can enhance accuracy in such scenarios.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="footer"></div>
+        </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+        <script src="./src/js/script.js"></script>
+    </div>
+</body>
+
+</html>
