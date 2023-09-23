@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  src: local('PT_Sans'), url('../fonts/PT_Sans/PTSans-Regular.ttf') format('ttf');
+
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Roboto'), url('../fonts/Roboto/Roboto-Medium.ttf') format('ttf');
+
+}
+
+
+// fonts
+$font: 'Roboto',
+sans-serif;
+$font-header : 'Roboto',
+sans-serif;
+
+// fonts
+$font: 'PT Sans',
+sans-serif;
+$font-header : 'PT Sans',
+sans-serif;
