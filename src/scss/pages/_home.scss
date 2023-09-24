@@ -3,7 +3,6 @@ body {
     background-color: rgb(237 240 237 / 85%);
     font-size: 16px;
 
-    /* Default styles for all screen sizes */
     img {
         max-width: 100%;
         height: auto;
@@ -47,6 +46,10 @@ p {
     transform: translateY(0);
 }
 
+.navbar-nav {
+    padding-left: revert;
+}
+
 .navbar {
     display: block;
     width: 93%;
@@ -57,7 +60,7 @@ p {
         border-color: #fff8dc;
         width: 7.7rem;
         height: 4rem;
-        padding: 0px;
+        padding: 1px;
         text-align: center;
     }
 
@@ -78,9 +81,6 @@ p {
 
 }
 
-
-
-
 h2 {
     color: #457745;
     text-align: center;
@@ -100,10 +100,6 @@ h2 {
     filter: blur(5px);
     transform: translateX(-100%);
     transition: all 1s;
-
-    ul {
-        padding-left: 2rem;
-    }
 
     .img-desc {
         font-family: 'Times New Roman', Times, serif;
@@ -215,7 +211,6 @@ h2 {
 
 
 
-/* Styles for screens with a maximum width of 768px (typical for smartphones) */
 @media only screen and (max-width: 600px) {
 
 
@@ -286,7 +281,6 @@ h2 {
             padding-left: 1rem;
         }
 
-        /* Reduce padding for a more compact layout */
         *,
         ::after,
         ::before {
