@@ -218,27 +218,21 @@ h2 {
 /* Styles for screens with a maximum width of 768px (typical for smartphones) */
 @media only screen and (max-width: 600px) {
 
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+        outline: none;
+    }
+
     .navbar-toggler {
-        border: 0px solid transparent;
-        border: unset;
+        padding: -1rem 1rem;
     }
 
-    /* Style the arrow button and hide it initially */
-    .navbar-toggler-arrow {
-        display: none;
-    }
-
-    /* Style the hamburger icon */
     .navbar-toggler-icon {
-        border-radius: 4px;
-        /* Rounded corners */
         font-size: 40px;
-        /* Increase font size to make it larger */
         color: #FFFFFF;
-        /* Text color */
     }
 
-    /* Set content of hamburger icon to ≡ (three lines) */
     .navbar-toggler-icon::before {
         content: "≡";
     }
@@ -247,22 +241,18 @@ h2 {
     .navbar-collapse.show .nav-link {
         display: inline-block;
         margin-right: 10px;
-        /* Add spacing between menu items */
     }
 
     .navbar-collapse {
         display: block;
-    }
-
-    .navbar-collapse {
         background-color: #536553;
         padding: 0rem;
-    }
 
-    .navbar-collapse .nav-link {
-        color: #FFFFFF;
-        font-size: 18px;
-        padding: 0.5rem 0;
+        .nav-link {
+            color: #FFFFFF;
+            font-size: 18px;
+            padding: 0.5rem 0;
+        }
     }
 
     .navbar {
