@@ -1,6 +1,5 @@
 $("#navbar-toggle-btn").click(function () {
     $(".navbar-collapse").toggleClass("show");
-    $(".navbar-toggler-arrow").toggle(); // Toggle the arrow button
 });
 
 const observer = new IntersectionObserver((entries) => {
