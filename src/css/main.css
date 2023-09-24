@@ -16,7 +16,6 @@ body {
   font-family: "PT Sans", "Roboto", sans-serif;
   background-color: rgba(237, 240, 237, 0.85);
   font-size: 16px;
-  /* Default styles for all screen sizes */
 }
 body img {
   max-width: 100%;
@@ -58,6 +57,10 @@ p {
   transform: translateY(0);
 }
 
+.navbar-nav {
+  padding-left: revert;
+}
+
 .navbar {
   display: block;
   width: 93%;
@@ -68,7 +71,7 @@ p {
   border-color: #fff8dc;
   width: 7.7rem;
   height: 4rem;
-  padding: 0px;
+  padding: 1px;
   text-align: center;
 }
 
@@ -104,9 +107,6 @@ h2 {
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
-}
-.content ul {
-  padding-left: 2rem;
 }
 .content .img-desc {
   font-family: "Times New Roman", Times, serif;
@@ -188,7 +188,6 @@ h2 {
   width: 100%;
 }
 
-/* Styles for screens with a maximum width of 768px (typical for smartphones) */
 @media only screen and (max-width: 600px) {
   .navbar-toggler:focus {
     box-shadow: none;
@@ -241,7 +240,6 @@ h2 {
     margin: 0rem;
     margin-bottom: 1rem;
     padding: 2rem;
-    /* Reduce padding for a more compact layout */
   }
   .content ul {
     padding-left: 1rem;
