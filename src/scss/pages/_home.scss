@@ -2,13 +2,12 @@ body {
     font-family: "PT Sans", "Roboto", sans-serif;
     background-color: rgb(237 240 237 / 85%);
     font-size: 16px;
-    /* Default styles for all screen sizes */
 
+    /* Default styles for all screen sizes */
     img {
         max-width: 100%;
         height: auto;
     }
-
 
     .tau-logo {
         display: block;
@@ -24,7 +23,6 @@ body {
     header {
         color: #536553;
     }
-
 }
 
 h2.display-5 {
@@ -215,16 +213,34 @@ h2 {
 
 }
 
-/* Styles for screens with a maximum width of 768px (typical for smartphones) */
-@media (max-width: 768px) {
 
-    /* Style the arrow button */
+
+/* Styles for screens with a maximum width of 768px (typical for smartphones) */
+@media only screen and (max-width: 600px) {
+
+    .navbar-toggler {
+        border: 0px solid transparent;
+        border: unset;
+    }
+
+    /* Style the arrow button and hide it initially */
     .navbar-toggler-arrow {
         display: none;
-        /* Initially hide the arrow button */
-        font-size: 24px;
+    }
+
+    /* Style the hamburger icon */
+    .navbar-toggler-icon {
+        border-radius: 4px;
+        /* Rounded corners */
+        font-size: 40px;
+        /* Increase font size to make it larger */
         color: #FFFFFF;
-        margin-right: 10px;
+        /* Text color */
+    }
+
+    /* Set content of hamburger icon to ≡ (three lines) */
+    .navbar-toggler-icon::before {
+        content: "≡";
     }
 
     /* Style the menu items */
@@ -238,35 +254,27 @@ h2 {
         display: block;
     }
 
-    /* Style the hamburger icon */
-    .navbar-toggler-icon {
-        background-color: #FFFFFF;
-        /* Background color of the icon */
-        border-radius: 4px;
-        /* Rounded corners */
-    }
-
-    /* Style the collapsed menu */
     .navbar-collapse {
         background-color: #536553;
-        /* Background color of the menu */
-        padding: 1rem;
-        /* Add padding for readability */
+        padding: 0rem;
     }
 
-    /* Style the links in the collapsed menu */
     .navbar-collapse .nav-link {
         color: #FFFFFF;
-        /* Text color */
         font-size: 18px;
-        /* Font size */
         padding: 0.5rem 0;
-        /* Spacing between items */
     }
 
     .navbar {
         width: 100%;
-        /* Make the navbar full width */
+
+        .nav-item {
+            width: 100%;
+            height: 0%;
+            padding: 0px;
+            text-align: left;
+            margin: -2px;
+        }
     }
 
     body {
