@@ -11,10 +11,15 @@
   font-weight: 500;
   src: local("Roboto"), url("../fonts/Roboto/Roboto-Medium.ttf") format("ttf");
 }
-/* Define styles for the centered navigation bar */
 body {
   font-family: "PT Sans", "Roboto", sans-serif;
   background-color: rgba(237, 240, 237, 0.85);
+  font-size: 16px;
+  /* Default styles for all screen sizes */
+}
+body img {
+  max-width: 100%;
+  height: auto;
 }
 body .tau-logo {
   display: block;
@@ -180,4 +185,77 @@ h2 {
 }
 #cifar100-content .cifar100-resnet-comparison {
   width: 100%;
+}
+
+/* Styles for screens with a maximum width of 768px (typical for smartphones) */
+@media (max-width: 768px) {
+  /* Style the arrow button */
+  .navbar-toggler-arrow {
+    display: none;
+    /* Initially hide the arrow button */
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-right: 10px;
+  }
+  /* Style the menu items */
+  .navbar-collapse.show .nav-link {
+    display: inline-block;
+    margin-right: 10px;
+    /* Add spacing between menu items */
+  }
+  .navbar-collapse {
+    display: block;
+  }
+  /* Style the hamburger icon */
+  .navbar-toggler-icon {
+    background-color: #FFFFFF;
+    /* Background color of the icon */
+    border-radius: 4px;
+    /* Rounded corners */
+  }
+  /* Style the collapsed menu */
+  .navbar-collapse {
+    background-color: #536553;
+    /* Background color of the menu */
+    padding: 1rem;
+    /* Add padding for readability */
+  }
+  /* Style the links in the collapsed menu */
+  .navbar-collapse .nav-link {
+    color: #FFFFFF;
+    /* Text color */
+    font-size: 18px;
+    /* Font size */
+    padding: 0.5rem 0;
+    /* Spacing between items */
+  }
+  .navbar {
+    width: 100%;
+    /* Make the navbar full width */
+  }
+  body {
+    font-size: 14px;
+  }
+  body .tau-logo {
+    margin-bottom: 20px;
+    width: 80%;
+    padding: 0.9rem;
+  }
+  .content {
+    margin: 0rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    /* Reduce padding for a more compact layout */
+  }
+  .content ul {
+    padding-left: 1rem;
+  }
+  .content *,
+  .content ::after,
+  .content ::before {
+    box-sizing: unset;
+  }
+  .content .options {
+    width: 10rem;
+  }
 }
