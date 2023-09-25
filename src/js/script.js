@@ -1,7 +1,8 @@
-$("#navbar-toggle-btn").click(function () {
-    $(".navbar-collapse").toggleClass("show");
+$(document).ready(function () {
+    $('.image-clickable').click(function () {
+        $(this).toggleClass('enlarged');
+    });
 });
-
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
