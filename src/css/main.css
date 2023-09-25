@@ -58,6 +58,9 @@ p {
 }
 
 .navbar-nav {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
   padding-left: unset;
 }
 
