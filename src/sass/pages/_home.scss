@@ -4,7 +4,7 @@ body {
     font-size: 16px;
 
     img {
-        max-width: 100%;
+        width: 100%;
         height: auto;
     }
 
@@ -47,7 +47,7 @@ p {
 }
 
 .navbar-nav {
-    padding-left: revert;
+    padding-left: unset;
 }
 
 .navbar {
@@ -101,6 +101,10 @@ h2 {
     transform: translateX(-100%);
     transition: all 1s;
 
+    p {
+        text-align: justify;
+    }
+
     .img-desc {
         font-family: 'Times New Roman', Times, serif;
         font-size: smaller;
@@ -128,7 +132,9 @@ h2 {
     }
 }
 
+
 @media(prefers-reduced-motion) {
+
     .content {
         transition: none;
     }
@@ -140,15 +146,15 @@ h2 {
     transform: translateX(0);
 }
 
-.models-table-img {
+#models-table-img {
     width: 100%;
 }
 
 
 
 #mnist-content {
-    .mnist-article {
-        width: 50%;
+    #mnist-article {
+        width: 60%;
     }
 
     #mnist-performance {
@@ -159,12 +165,8 @@ h2 {
         display: none;
     }
 
-    .mnist-example {
+    #mnist-example {
         width: 95%;
-    }
-
-    .mnist-comparison {
-        width: 100%;
     }
 
 }
@@ -176,39 +178,27 @@ h2 {
         display: none;
     }
 
-    .cifar10-example {
+    #cifar10-example {
         width: 95%;
     }
-
-    .cifar10-comparison {
-        width: 100%;
-    }
-
 }
 
 #cifar100-content {
-    .cifar10-explenation {
-        display: flex;
-    }
 
     .explanation {
         display: none;
     }
 
-    .cifar100-example {
+    #cifar100-example {
         width: 95%;
     }
-
-    .cifar100-comparison {
-        width: 100%;
-    }
-
-    .cifar100-resnet-comparison {
-        width: 100%;
-    }
-
 }
 
+.enlarged {
+    transform: scale(1.2);
+    /* Adjust the scale factor as needed */
+    transition: transform 0.3s ease-in-out;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -233,9 +223,10 @@ h2 {
     }
 
     /* Style the menu items */
-    .navbar-collapse.show .nav-link {
+    .navbar-collapse .nav-link {
         display: inline-block;
         margin-right: 10px;
+        width: 100%;
     }
 
     .navbar-collapse {
@@ -249,9 +240,11 @@ h2 {
             padding: 0.5rem 0;
         }
     }
+
     .navbar-nav {
         padding-left: unset;
     }
+
     .navbar {
         width: 100%;
 
@@ -260,7 +253,8 @@ h2 {
             height: 0%;
             padding: 0px;
             text-align: left;
-            margin: -2px;
+            margin: -1px;
+            padding-left: 1rem;
         }
     }
 
@@ -277,7 +271,8 @@ h2 {
     .content {
         margin: 0rem;
         margin-bottom: 1rem;
-        padding: 2rem;
+        padding: 1rem;
+        padding-right: 2.4rem;
 
         ul {
             padding-left: 1rem;
@@ -290,7 +285,7 @@ h2 {
         }
 
         .options {
-            width: 10rem;
+            width: 57%;
         }
     }
 }
